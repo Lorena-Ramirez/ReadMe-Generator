@@ -33,11 +33,12 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
             name: 'test',
             message: 'What are the test instuctions',
         },
-        // {
-        //     type: 'input',
-        //     name: 'license',
-        //     message: 'Please choose a license',
-        // },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Please choose a license',
+            choices: ["MIT", "GNU GPLv3"],
+        },
         {
             type: 'input',
             name: 'github',
